@@ -12,3 +12,6 @@ RUN set -x \
     && rmdir docker \
     && rm docker.tgz \
     && docker -v
+
+
+    RUN curl -o /usr/bin/kubectl https://storage.googleapis.com/kubernetes-release/release/v1.6.0/bin/linux/amd64/kubectl && chmod a+x /usr/bin/kubectl
